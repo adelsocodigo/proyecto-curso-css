@@ -1,0 +1,39 @@
+.contenedor{
+    background-color: dimgray;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 20px;
+    width: 50%;
+    position: relative;
+    left: 25%;
+}
+input[type="text"],  /*seleccionamos por atributo para darles la misma configuracion*/
+input[type="email"],
+select,
+textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid grey;
+    border-radius: 10px;
+    box-sizing: border-box; /*esto termina de configurar el ancho*/
+}
+input[type="submit"]{
+    width: 80%;
+    background-color: blue;
+    color: aliceblue;
+    padding: 15px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;  /*si eliminas position, left y ajustas el width en 100% 
+                                    el boton ocupa todo el ancho*/ 
+    left: 10%;
+}
+textarea:focus,input:focus{    /*cuando el usuario pulse clic se activara*/
+    background-color:chartreuse
+}
+input[type="submit"]:hover{
+    background-color: aqua;
+}
